@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0F04CB2AE0A9F800DDC3A4 /* PropediumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04CA2AE0A9F800DDC3A4 /* PropediumApp.swift */; };
+		BB0F04CD2AE0A9F800DDC3A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04CC2AE0A9F800DDC3A4 /* ContentView.swift */; };
+		BB0F04CF2AE0A9F900DDC3A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0F04CE2AE0A9F900DDC3A4 /* Assets.xcassets */; };
+		BB0F04D22AE0A9F900DDC3A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0F04D12AE0A9F900DDC3A4 /* Preview Assets.xcassets */; };
+		BB0F04DC2AE0A9F900DDC3A4 /* PropediumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04DB2AE0A9F900DDC3A4 /* PropediumTests.swift */; };
+		BB0F04E62AE0A9F900DDC3A4 /* PropediumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04E52AE0A9F900DDC3A4 /* PropediumUITests.swift */; };
+		BB0F04E82AE0A9F900DDC3A4 /* PropediumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04E72AE0A9F900DDC3A4 /* PropediumUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB0F04D82AE0A9F900DDC3A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0F04BF2AE0A9F800DDC3A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB0F04C62AE0A9F800DDC3A4;
+			remoteInfo = Propedium;
+		};
+		BB0F04E22AE0A9F900DDC3A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0F04BF2AE0A9F800DDC3A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB0F04C62AE0A9F800DDC3A4;
+			remoteInfo = Propedium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB0F04C72AE0A9F800DDC3A4 /* Propedium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Propedium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0F04CA2AE0A9F800DDC3A4 /* PropediumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropediumApp.swift; sourceTree = "<group>"; };
+		BB0F04CC2AE0A9F800DDC3A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB0F04CE2AE0A9F900DDC3A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB0F04D12AE0A9F900DDC3A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB0F04D72AE0A9F900DDC3A4 /* PropediumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropediumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0F04DB2AE0A9F900DDC3A4 /* PropediumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropediumTests.swift; sourceTree = "<group>"; };
+		BB0F04E12AE0A9F900DDC3A4 /* PropediumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropediumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0F04E52AE0A9F900DDC3A4 /* PropediumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropediumUITests.swift; sourceTree = "<group>"; };
+		BB0F04E72AE0A9F900DDC3A4 /* PropediumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropediumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB0F04C42AE0A9F800DDC3A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F04D42AE0A9F900DDC3A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F04DE2AE0A9F900DDC3A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB0F04BE2AE0A9F800DDC3A4 = {
+			isa = PBXGroup;
+			children = (
+				BB0F04C92AE0A9F800DDC3A4 /* Propedium */,
+				BB0F04DA2AE0A9F900DDC3A4 /* PropediumTests */,
+				BB0F04E42AE0A9F900DDC3A4 /* PropediumUITests */,
+				BB0F04C82AE0A9F800DDC3A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB0F04C82AE0A9F800DDC3A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F04C72AE0A9F800DDC3A4 /* Propedium.app */,
+				BB0F04D72AE0A9F900DDC3A4 /* PropediumTests.xctest */,
+				BB0F04E12AE0A9F900DDC3A4 /* PropediumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB0F04C92AE0A9F800DDC3A4 /* Propedium */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F04CA2AE0A9F800DDC3A4 /* PropediumApp.swift */,
+				BB0F04CC2AE0A9F800DDC3A4 /* ContentView.swift */,
+				BB0F04CE2AE0A9F900DDC3A4 /* Assets.xcassets */,
+				BB0F04D02AE0A9F900DDC3A4 /* Preview Content */,
+			);
+			path = Propedium;
+			sourceTree = "<group>";
+		};
+		BB0F04D02AE0A9F900DDC3A4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F04D12AE0A9F900DDC3A4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB0F04DA2AE0A9F900DDC3A4 /* PropediumTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F04DB2AE0A9F900DDC3A4 /* PropediumTests.swift */,
+			);
+			path = PropediumTests;
+			sourceTree = "<group>";
+		};
+		BB0F04E42AE0A9F900DDC3A4 /* PropediumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F04E52AE0A9F900DDC3A4 /* PropediumUITests.swift */,
+				BB0F04E72AE0A9F900DDC3A4 /* PropediumUITestsLaunchTests.swift */,
+			);
+			path = PropediumUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB0F04C62AE0A9F800DDC3A4 /* Propedium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0F04EB2AE0A9F900DDC3A4 /* Build configuration list for PBXNativeTarget "Propedium" */;
+			buildPhases = (
+				BB0F04C32AE0A9F800DDC3A4 /* Sources */,
+				BB0F04C42AE0A9F800DDC3A4 /* Frameworks */,
+				BB0F04C52AE0A9F800DDC3A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Propedium;
+			productName = Propedium;
+			productReference = BB0F04C72AE0A9F800DDC3A4 /* Propedium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB0F04D62AE0A9F900DDC3A4 /* PropediumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0F04EE2AE0A9F900DDC3A4 /* Build configuration list for PBXNativeTarget "PropediumTests" */;
+			buildPhases = (
+				BB0F04D32AE0A9F900DDC3A4 /* Sources */,
+				BB0F04D42AE0A9F900DDC3A4 /* Frameworks */,
+				BB0F04D52AE0A9F900DDC3A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0F04D92AE0A9F900DDC3A4 /* PBXTargetDependency */,
+			);
+			name = PropediumTests;
+			productName = PropediumTests;
+			productReference = BB0F04D72AE0A9F900DDC3A4 /* PropediumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB0F04E02AE0A9F900DDC3A4 /* PropediumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0F04F12AE0A9F900DDC3A4 /* Build configuration list for PBXNativeTarget "PropediumUITests" */;
+			buildPhases = (
+				BB0F04DD2AE0A9F900DDC3A4 /* Sources */,
+				BB0F04DE2AE0A9F900DDC3A4 /* Frameworks */,
+				BB0F04DF2AE0A9F900DDC3A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0F04E32AE0A9F900DDC3A4 /* PBXTargetDependency */,
+			);
+			name = PropediumUITests;
+			productName = PropediumUITests;
+			productReference = BB0F04E12AE0A9F900DDC3A4 /* PropediumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB0F04BF2AE0A9F800DDC3A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					BB0F04C62AE0A9F800DDC3A4 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					BB0F04D62AE0A9F900DDC3A4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = BB0F04C62AE0A9F800DDC3A4;
+					};
+					BB0F04E02AE0A9F900DDC3A4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = BB0F04C62AE0A9F800DDC3A4;
+					};
+				};
+			};
+			buildConfigurationList = BB0F04C22AE0A9F800DDC3A4 /* Build configuration list for PBXProject "Propedium" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB0F04BE2AE0A9F800DDC3A4;
+			productRefGroup = BB0F04C82AE0A9F800DDC3A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB0F04C62AE0A9F800DDC3A4 /* Propedium */,
+				BB0F04D62AE0A9F900DDC3A4 /* PropediumTests */,
+				BB0F04E02AE0A9F900DDC3A4 /* PropediumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB0F04C52AE0A9F800DDC3A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0F04D22AE0A9F900DDC3A4 /* Preview Assets.xcassets in Resources */,
+				BB0F04CF2AE0A9F900DDC3A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F04D52AE0A9F900DDC3A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F04DF2AE0A9F900DDC3A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB0F04C32AE0A9F800DDC3A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0F04CD2AE0A9F800DDC3A4 /* ContentView.swift in Sources */,
+				BB0F04CB2AE0A9F800DDC3A4 /* PropediumApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F04D32AE0A9F900DDC3A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0F04DC2AE0A9F900DDC3A4 /* PropediumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0F04DD2AE0A9F900DDC3A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0F04E82AE0A9F900DDC3A4 /* PropediumUITestsLaunchTests.swift in Sources */,
+				BB0F04E62AE0A9F900DDC3A4 /* PropediumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB0F04D92AE0A9F900DDC3A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB0F04C62AE0A9F800DDC3A4 /* Propedium */;
+			targetProxy = BB0F04D82AE0A9F900DDC3A4 /* PBXContainerItemProxy */;
+		};
+		BB0F04E32AE0A9F900DDC3A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB0F04C62AE0A9F800DDC3A4 /* Propedium */;
+			targetProxy = BB0F04E22AE0A9F900DDC3A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB0F04E92AE0A9F900DDC3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB0F04EA2AE0A9F900DDC3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB0F04EC2AE0A9F900DDC3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Propedium/Preview Content\"";
+				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.I7T5.Propedium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB0F04ED2AE0A9F900DDC3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Propedium/Preview Content\"";
+				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.I7T5.Propedium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB0F04EF2AE0A9F900DDC3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.I7T5.PropediumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Propedium.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Propedium";
+			};
+			name = Debug;
+		};
+		BB0F04F02AE0A9F900DDC3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.I7T5.PropediumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Propedium.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Propedium";
+			};
+			name = Release;
+		};
+		BB0F04F22AE0A9F900DDC3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.I7T5.PropediumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Propedium;
+			};
+			name = Debug;
+		};
+		BB0F04F32AE0A9F900DDC3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.I7T5.PropediumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Propedium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB0F04C22AE0A9F800DDC3A4 /* Build configuration list for PBXProject "Propedium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0F04E92AE0A9F900DDC3A4 /* Debug */,
+				BB0F04EA2AE0A9F900DDC3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0F04EB2AE0A9F900DDC3A4 /* Build configuration list for PBXNativeTarget "Propedium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0F04EC2AE0A9F900DDC3A4 /* Debug */,
+				BB0F04ED2AE0A9F900DDC3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0F04EE2AE0A9F900DDC3A4 /* Build configuration list for PBXNativeTarget "PropediumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0F04EF2AE0A9F900DDC3A4 /* Debug */,
+				BB0F04F02AE0A9F900DDC3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0F04F12AE0A9F900DDC3A4 /* Build configuration list for PBXNativeTarget "PropediumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0F04F22AE0A9F900DDC3A4 /* Debug */,
+				BB0F04F32AE0A9F900DDC3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB0F04BF2AE0A9F800DDC3A4 /* Project object */;
+}
