@@ -12,13 +12,14 @@ import SwiftData
 @MainActor
 let previewContainer: ModelContainer = {
     do {
+        let schema = Schema([Diem.self])
         let container = try ModelContainer(
             for: Diem.self,
             configurations: ModelConfiguration(isStoredInMemoryOnly: true)
         )
         let modelContext = container.mainContext
         if try modelContext.fetch(FetchDescriptor<Diem>()).isEmpty {
-            Diem.sampleDiems.forEach { container.mainContext.insert($0) }
+            Diem.sampleDiems.forEach { modelContext.insert($0) }
         }
         return container
     } catch {
@@ -35,5 +36,14 @@ let previewContainer: ModelContainer = {
 //            Diem.insertSampleData(modelContext: container.mainContext)
 //        }
 //        return container
+//    }
+//}
+//
+//extension Diem {
+//    static func insertSampleData(modelContext: ModelContext) {
+//        // Add the Diems to the model context.
+//        for diem in Diem.sampleDiems {
+//            modelContext.insert(diem)
+//        }
 //    }
 //}

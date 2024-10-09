@@ -8,9 +8,15 @@
 import Foundation
 
 func toDate(date: String) -> Date {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyy-MM-dd"
-    return dateFormatter.date(from: date)!
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd"
+    return formatter.date(from: date)!
+}
+
+func toString(date: Date) -> String {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "MMM dd, yyyy"
+    return formatter.string(from: date)
 }
 
 func createDate(year: Int? = nil, month: Int, day: Int) -> Date {

@@ -1,5 +1,5 @@
 //
-//  DiemWidget+EntryView.swift
+//  DiemWidgetEntryView.swift
 //  Propedium
 //
 //  Created by 唐依纳 on 2023/12/16.
@@ -13,10 +13,13 @@ struct DiemWidgetEntryView : View {
     var entry: DiemWidgetEntry
 
     var body: some View {
-        let diem: Diem = .init(from: entry.configuration.diem)
+//        Text("\(abs(Diem(from: entry.configuration.diem).daysDiff()))")
+        if let diem: Diem = entry.diem {
+            DiemSharedView(diem: diem)
+        } else {
+            DiemSharedView(diem: .placeholder)
+        }
         
-        // TODO: DiemBaseView
-//        DiemGridItem(diem: diem)
         
     }
 }
@@ -26,28 +29,7 @@ struct DiemWidgetEntryView : View {
 //        DiemWidgetEntryView(entry: DiemWidgetEntry(date: Date(), configuration: .christmas))
 //    }
     
-    DiemWidgetEntryView(entry: DiemWidgetEntry(date: Date(), configuration: .christmas))
+    DiemWidgetEntryView(entry: DiemWidgetEntry(date: Date(), diem: .christmas))
+        .previewContext(WidgetPreviewContext(family: .systemSmall))
         .modelContainer(previewContainer)
 }
-
-//extension DiemWidgetEntryView {
-//    @ViewBuilder
-//    private var contentView: some View {
-//        if let productInfo = entry.productInfo {
-//            Text("Count: \(productInfo.count)")
-//                .font(.subheadline)
-//                .bold()
-//            if let lastItem = productInfo.lastItem {
-//                Group {
-//                    Text("Last item:")
-//                    Text(lastItem.name)
-//                }
-//                .font(.footnote)
-//            }
-//        } else {
-//            Text("Info unavailable")
-//                .font(.subheadline)
-//                .foregroundStyle(.secondary)
-//        }
-//    }
-//}

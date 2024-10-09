@@ -18,12 +18,12 @@ import OSLog
 private let logger = Logger(subsystem: "Widgets", category: "DiemWidgetIntent")
 
 struct DiemWidgetIntent: WidgetConfigurationIntent {
-    static var title: LocalizedStringResource = "Diem"
-    static var description = IntentDescription("Keeps track of a diem.")
+    static var title: LocalizedStringResource = "Select diem"
+//    static var description = IntentDescription("Keeps track of a diem.")
 
     // TODO: assign default diem
-    @Parameter (title: "Diem")
-    var diem: DiemEntity
+    @Parameter(title: "Diem")
+    var diem: DiemEntity?
     
     init(diem: DiemEntity) {
         self.diem = diem
@@ -70,10 +70,11 @@ struct DiemEntity: AppEntity, Identifiable, Hashable {
     var name: String
     var date: Date
     var detail: String?
+    var id: String
     
-    var id: String {
-        name
-    }
+//    var id: String {
+//        name
+//    }
     
     func daysDiff() -> Int {
         return Calendar.current.dateComponents([.day], from: Date(), to: date).day!
@@ -82,11 +83,14 @@ struct DiemEntity: AppEntity, Identifiable, Hashable {
     init(name: String, date: Date) {
         self.name = name
         self.date = date
+        self.id = UUID().uuidString
     }
 
     init(from diem: Diem) {
         name = diem.name
         date = diem.date
+        detail = diem.detail
+        id = diem.id
     }
 
     var displayRepresentation: DisplayRepresentation {
@@ -97,32 +101,49 @@ struct DiemEntity: AppEntity, Identifiable, Hashable {
     static var defaultQuery = DiemEntityQuery()
 }
 
-struct DiemEntityQuery: EntityQuery, Sendable {
-    // Reference: https://github.com/pawello2222/WidgetExamples/blob/main/Widgets/DynamicIntentWidget
+// https://developer.apple.com/documentation/swiftui/backyard-birds-sample
+//struct DiemEntityQuery: EntityQuery, Sendable {
 //    func entities(for identifiers: [DiemEntity.ID]) async throws -> [DiemEntity] {
-//        Diem.getAll()
-//            .filter { identifiers.contains($0.id) }
-//            .map(DiemEntity.init)
+//        logger.info("Loading diems for identifiers: \(identifiers)")
+//        // Replaced `DataGeneration.container` with `try! ModelContainer(for: Diem.self)`
+//        let modelContext = ModelContext(try! ModelContainer(for: Schema([Diem.self])))
+//        // TODO: handle when modelContext is empty or when id doesn't exist on second time changing diem
+////        let diems = try modelContext.fetch(FetchDescriptor<Diem>(predicate: #Predicate { identifiers.contains($0.id) }))
+//        let diems = try modelContext.fetch(FetchDescriptor<Diem>())  // try this
+//        logger.info("Found \(diems.count) diems")
+//        return diems.map { DiemEntity(from: $0) }
 //    }
-//
+//    
 //    func suggestedEntities() async throws -> [DiemEntity] {
-//        Diem.getAll().map(DiemEntity.init)
+//        logger.info("Loading diems to suggest for specific diem...")
+//        let modelContext = ModelContext(try! ModelContainer(for: Schema([Diem.self])))
+//        let diems = try modelContext.fetch(FetchDescriptor<Diem>())
+//        logger.info("Found \(diems.count) diems")
+//        return diems.map { DiemEntity(from: $0) }
 //    }
-    
-    // Reference: https://developer.apple.com/documentation/swiftui/backyard-birds-sample
+//}
+
+// By ChatGPT
+// Key Changes:
+//
+// 1. ModelContainer Initialization: The ModelContainer is now initialized with Diem.self directly. This ensures that the schema for Diem is properly registered in the container.
+// 2. Use ModelContext Safely: The ModelContext is created using the container, ensuring that the context is correctly linked to the schema.
+struct DiemEntityQuery: EntityQuery, Sendable {
     func entities(for identifiers: [DiemEntity.ID]) async throws -> [DiemEntity] {
-        logger.info("Loading backyards for identifiers: \(identifiers)")
-        // Replaced `DataGeneration.container` with `try! ModelContainer(for: Diem.self)`
-        let modelContext = ModelContext(try! ModelContainer(for: Schema([Diem.self])))
-        let diems = try! modelContext.fetch(FetchDescriptor<Diem>(predicate: #Predicate { identifiers.contains($0.id) }))
+        logger.info("Loading diems for identifiers: \(identifiers)")
+        let container = try ModelContainer(for: Diem.self)
+        let modelContext = ModelContext(container)
+        let diems = try modelContext.fetch(FetchDescriptor<Diem>(predicate: #Predicate { identifiers.contains($0.id) }))
+//        let diems = try modelContext.fetch(FetchDescriptor<Diem>())
         logger.info("Found \(diems.count) diems")
         return diems.map { DiemEntity(from: $0) }
     }
     
     func suggestedEntities() async throws -> [DiemEntity] {
-        logger.info("Loading backyards to suggest for specific backyard...")
-        let modelContext = ModelContext(try! ModelContainer(for: Schema([Diem.self])))
-        let diems = try! modelContext.fetch(FetchDescriptor<Diem>())
+        logger.info("Loading diems to suggest for specific diem...")
+        let container = try ModelContainer(for: Diem.self)
+        let modelContext = ModelContext(container)
+        let diems = try modelContext.fetch(FetchDescriptor<Diem>())
         logger.info("Found \(diems.count) diems")
         return diems.map { DiemEntity(from: $0) }
     }

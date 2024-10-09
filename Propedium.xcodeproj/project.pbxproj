@@ -14,6 +14,41 @@
 		BB0F04DC2AE0A9F900DDC3A4 /* PropediumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04DB2AE0A9F900DDC3A4 /* PropediumTests.swift */; };
 		BB0F04E62AE0A9F900DDC3A4 /* PropediumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04E52AE0A9F900DDC3A4 /* PropediumUITests.swift */; };
 		BB0F04E82AE0A9F900DDC3A4 /* PropediumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04E72AE0A9F900DDC3A4 /* PropediumUITestsLaunchTests.swift */; };
+		BB0F04F52AE0AE6500DDC3A4 /* Diem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04F42AE0AE6500DDC3A4 /* Diem.swift */; };
+		BB0F04FE2AE0B2AA00DDC3A4 /* DiemGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04FD2AE0B2AA00DDC3A4 /* DiemGridItem.swift */; };
+		BB2B5E232B526A55004E2F9B /* DiemSharedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2B5E222B526A55004E2F9B /* DiemSharedView.swift */; };
+		BB2B5E242B526A55004E2F9B /* DiemSharedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2B5E222B526A55004E2F9B /* DiemSharedView.swift */; };
+		BB4B4F592B54B132002F0A01 /* DiemWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFC6A2B2E827A0018CE5E /* DiemWidgetEntry.swift */; };
+		BB4B4F5A2B54B134002F0A01 /* DiemWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFC6D2B2E852E0018CE5E /* DiemWidgetEntryView.swift */; };
+		BB4B4F5B2B55FD11002F0A01 /* DiemWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB774D752AFDDF5400030B82 /* DiemWidgetIntent.swift */; };
+		BB4B4F5C2B55FE9E002F0A01 /* DiemWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB774D752AFDDF5400030B82 /* DiemWidgetIntent.swift */; };
+		BB5830B52B4E1B470074EF00 /* DiemsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5830B42B4E1B470074EF00 /* DiemsGrid.swift */; };
+		BB5830B62B4E20210074EF00 /* SampleData+Diem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA39282B156C08004206EF /* SampleData+Diem.swift */; };
+		BB5830B82B4E3DF00074EF00 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5830B72B4E3DF00074EF00 /* TabBarView.swift */; };
+		BB71A7372B4F65D900FF2F83 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB71A7362B4F65D900FF2F83 /* HomeView.swift */; };
+		BB71A7392B4F6AAA00FF2F83 /* DiemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB71A7382B4F6AAA00FF2F83 /* DiemDetail.swift */; };
+		BB71A73F2B4FB3B000FF2F83 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB71A73E2B4FB3B000FF2F83 /* HelperFunctions.swift */; };
+		BB71A7402B4FB41A00FF2F83 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB71A73E2B4FB3B000FF2F83 /* HelperFunctions.swift */; };
+		BB774D6E2AFDDF5400030B82 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB774D3B2AFDDD3300030B82 /* WidgetKit.framework */; };
+		BB774D6F2AFDDF5400030B82 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB774D3D2AFDDD3300030B82 /* SwiftUI.framework */; };
+		BB774D722AFDDF5400030B82 /* DiemWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB774D712AFDDF5400030B82 /* DiemWidgetBundle.swift */; };
+		BB774D742AFDDF5400030B82 /* DiemWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB774D732AFDDF5400030B82 /* DiemWidget.swift */; };
+		BB774D782AFDDF5500030B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB774D772AFDDF5500030B82 /* Assets.xcassets */; };
+		BB774D7C2AFDDF5500030B82 /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BB774D6D2AFDDF5400030B82 /* Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BBCE6C7F2B50BB9B0046AD6E /* Preview+ModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA39262B156BCF004206EF /* Preview+ModelContainer.swift */; };
+		BBCE6C802B50BB9E0046AD6E /* ModelContainerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA39212B156B0D004206EF /* ModelContainerPreview.swift */; };
+		BBCE6C812B50E2EC0046AD6E /* DiemGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04FD2AE0B2AA00DDC3A4 /* DiemGridItem.swift */; };
+		BBEDFC6C2B2E846F0018CE5E /* DiemWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFC6A2B2E827A0018CE5E /* DiemWidgetEntry.swift */; };
+		BBEDFC6F2B2E85300018CE5E /* DiemWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFC6D2B2E852E0018CE5E /* DiemWidgetEntryView.swift */; };
+		BBEDFC752B2E8BE20018CE5E /* DiemWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFC732B2E8BE20018CE5E /* DiemWidgetProvider.swift */; };
+		BBEDFC762B2FA32F0018CE5E /* Diem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04F42AE0AE6500DDC3A4 /* Diem.swift */; };
+		BBF251F52CB5946A0000CFFD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF251F42CB5946A0000CFFD /* SettingsView.swift */; };
+		BBF251F72CB596200000CFFD /* FoldersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF251F62CB596200000CFFD /* FoldersView.swift */; };
+		BBFA39222B156B0D004206EF /* ModelContainerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA39212B156B0D004206EF /* ModelContainerPreview.swift */; };
+		BBFA39252B156B86004206EF /* AppleLicense.txt in Resources */ = {isa = PBXBuildFile; fileRef = BBFA39242B156B86004206EF /* AppleLicense.txt */; };
+		BBFA39272B156BCF004206EF /* Preview+ModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA39262B156BCF004206EF /* Preview+ModelContainer.swift */; };
+		BBFA39292B156C08004206EF /* SampleData+Diem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA39282B156C08004206EF /* SampleData+Diem.swift */; };
+		BBFA392B2B157385004206EF /* DiemEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA392A2B157385004206EF /* DiemEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +66,28 @@
 			remoteGlobalIDString = BB0F04C62AE0A9F800DDC3A4;
 			remoteInfo = Propedium;
 		};
+		BB774D7A2AFDDF5500030B82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0F04BF2AE0A9F800DDC3A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB774D6C2AFDDF5400030B82;
+			remoteInfo = PropediumWidgetExtensionExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB774D4E2AFDDD3500030B82 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB774D7C2AFDDF5500030B82 /* Widgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BB0F04C72AE0A9F800DDC3A4 /* Propedium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Propedium.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +100,34 @@
 		BB0F04E12AE0A9F900DDC3A4 /* PropediumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropediumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0F04E52AE0A9F900DDC3A4 /* PropediumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropediumUITests.swift; sourceTree = "<group>"; };
 		BB0F04E72AE0A9F900DDC3A4 /* PropediumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropediumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB0F04F42AE0AE6500DDC3A4 /* Diem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diem.swift; sourceTree = "<group>"; };
+		BB0F04FD2AE0B2AA00DDC3A4 /* DiemGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemGridItem.swift; sourceTree = "<group>"; };
+		BB2B5E222B526A55004E2F9B /* DiemSharedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemSharedView.swift; sourceTree = "<group>"; };
+		BB5830B42B4E1B470074EF00 /* DiemsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemsGrid.swift; sourceTree = "<group>"; };
+		BB5830B72B4E3DF00074EF00 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		BB71A7362B4F65D900FF2F83 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BB71A7382B4F6AAA00FF2F83 /* DiemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemDetail.swift; sourceTree = "<group>"; };
+		BB71A73C2B4F7E2200FF2F83 /* PropediumRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PropediumRelease.entitlements; sourceTree = "<group>"; };
+		BB71A73D2B4F7E2E00FF2F83 /* WidgetsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetsRelease.entitlements; sourceTree = "<group>"; };
+		BB71A73E2B4FB3B000FF2F83 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		BB774D3B2AFDDD3300030B82 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BB774D3D2AFDDD3300030B82 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BB774D6D2AFDDF5400030B82 /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB774D712AFDDF5400030B82 /* DiemWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemWidgetBundle.swift; sourceTree = "<group>"; };
+		BB774D732AFDDF5400030B82 /* DiemWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemWidget.swift; sourceTree = "<group>"; };
+		BB774D752AFDDF5400030B82 /* DiemWidgetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemWidgetIntent.swift; sourceTree = "<group>"; };
+		BB774D772AFDDF5500030B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB774D792AFDDF5500030B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBEDFC6A2B2E827A0018CE5E /* DiemWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemWidgetEntry.swift; sourceTree = "<group>"; };
+		BBEDFC6D2B2E852E0018CE5E /* DiemWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemWidgetEntryView.swift; sourceTree = "<group>"; };
+		BBEDFC732B2E8BE20018CE5E /* DiemWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemWidgetProvider.swift; sourceTree = "<group>"; };
+		BBF251F42CB5946A0000CFFD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BBF251F62CB596200000CFFD /* FoldersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersView.swift; sourceTree = "<group>"; };
+		BBFA39212B156B0D004206EF /* ModelContainerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContainerPreview.swift; sourceTree = "<group>"; };
+		BBFA39242B156B86004206EF /* AppleLicense.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppleLicense.txt; sourceTree = "<group>"; };
+		BBFA39262B156BCF004206EF /* Preview+ModelContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Preview+ModelContainer.swift"; sourceTree = "<group>"; };
+		BBFA39282B156C08004206EF /* SampleData+Diem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SampleData+Diem.swift"; sourceTree = "<group>"; };
+		BBFA392A2B157385004206EF /* DiemEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiemEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,15 +152,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB774D6A2AFDDF5400030B82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB774D6F2AFDDF5400030B82 /* SwiftUI.framework in Frameworks */,
+				BB774D6E2AFDDF5400030B82 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BB0F04BE2AE0A9F800DDC3A4 = {
 			isa = PBXGroup;
 			children = (
+				BB71A73D2B4F7E2E00FF2F83 /* WidgetsRelease.entitlements */,
 				BB0F04C92AE0A9F800DDC3A4 /* Propedium */,
 				BB0F04DA2AE0A9F900DDC3A4 /* PropediumTests */,
 				BB0F04E42AE0A9F900DDC3A4 /* PropediumUITests */,
+				BB774D702AFDDF5400030B82 /* Widgets */,
+				BB774D3A2AFDDD3300030B82 /* Frameworks */,
+				BBFA39232B156B4C004206EF /* LICENSE */,
 				BB0F04C82AE0A9F800DDC3A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +184,7 @@
 				BB0F04C72AE0A9F800DDC3A4 /* Propedium.app */,
 				BB0F04D72AE0A9F900DDC3A4 /* PropediumTests.xctest */,
 				BB0F04E12AE0A9F900DDC3A4 /* PropediumUITests.xctest */,
+				BB774D6D2AFDDF5400030B82 /* Widgets.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +192,12 @@
 		BB0F04C92AE0A9F800DDC3A4 /* Propedium */ = {
 			isa = PBXGroup;
 			children = (
+				BB71A73C2B4F7E2200FF2F83 /* PropediumRelease.entitlements */,
 				BB0F04CA2AE0A9F800DDC3A4 /* PropediumApp.swift */,
-				BB0F04CC2AE0A9F800DDC3A4 /* ContentView.swift */,
+				BB0F04FC2AE0B27300DDC3A4 /* Views */,
+				BB0F04FB2AE0B26300DDC3A4 /* Model */,
 				BB0F04CE2AE0A9F900DDC3A4 /* Assets.xcassets */,
+				BBFA39202B156A5A004206EF /* Helpers */,
 				BB0F04D02AE0A9F900DDC3A4 /* Preview Content */,
 			);
 			path = Propedium;
@@ -127,6 +228,82 @@
 			path = PropediumUITests;
 			sourceTree = "<group>";
 		};
+		BB0F04FB2AE0B26300DDC3A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F04F42AE0AE6500DDC3A4 /* Diem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB0F04FC2AE0B27300DDC3A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F04CC2AE0A9F800DDC3A4 /* ContentView.swift */,
+				BB5830B72B4E3DF00074EF00 /* TabBarView.swift */,
+				BB71A7362B4F65D900FF2F83 /* HomeView.swift */,
+				BBF251F42CB5946A0000CFFD /* SettingsView.swift */,
+				BBF251F62CB596200000CFFD /* FoldersView.swift */,
+				BBF251F32CB5943C0000CFFD /* Diem */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB774D3A2AFDDD3300030B82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB774D3B2AFDDD3300030B82 /* WidgetKit.framework */,
+				BB774D3D2AFDDD3300030B82 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB774D702AFDDF5400030B82 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				BB774D712AFDDF5400030B82 /* DiemWidgetBundle.swift */,
+				BB774D732AFDDF5400030B82 /* DiemWidget.swift */,
+				BBEDFC732B2E8BE20018CE5E /* DiemWidgetProvider.swift */,
+				BBEDFC6D2B2E852E0018CE5E /* DiemWidgetEntryView.swift */,
+				BBEDFC6A2B2E827A0018CE5E /* DiemWidgetEntry.swift */,
+				BB774D752AFDDF5400030B82 /* DiemWidgetIntent.swift */,
+				BB774D772AFDDF5500030B82 /* Assets.xcassets */,
+				BB774D792AFDDF5500030B82 /* Info.plist */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		BBF251F32CB5943C0000CFFD /* Diem */ = {
+			isa = PBXGroup;
+			children = (
+				BB5830B42B4E1B470074EF00 /* DiemsGrid.swift */,
+				BB0F04FD2AE0B2AA00DDC3A4 /* DiemGridItem.swift */,
+				BB2B5E222B526A55004E2F9B /* DiemSharedView.swift */,
+				BB71A7382B4F6AAA00FF2F83 /* DiemDetail.swift */,
+				BBFA392A2B157385004206EF /* DiemEditor.swift */,
+			);
+			path = Diem;
+			sourceTree = "<group>";
+		};
+		BBFA39202B156A5A004206EF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BBFA39212B156B0D004206EF /* ModelContainerPreview.swift */,
+				BBFA39262B156BCF004206EF /* Preview+ModelContainer.swift */,
+				BBFA39282B156C08004206EF /* SampleData+Diem.swift */,
+				BB71A73E2B4FB3B000FF2F83 /* HelperFunctions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BBFA39232B156B4C004206EF /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				BBFA39242B156B86004206EF /* AppleLicense.txt */,
+			);
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +314,12 @@
 				BB0F04C32AE0A9F800DDC3A4 /* Sources */,
 				BB0F04C42AE0A9F800DDC3A4 /* Frameworks */,
 				BB0F04C52AE0A9F800DDC3A4 /* Resources */,
+				BB774D4E2AFDDD3500030B82 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BB774D7B2AFDDF5500030B82 /* PBXTargetDependency */,
 			);
 			name = Propedium;
 			productName = Propedium;
@@ -183,6 +362,23 @@
 			productReference = BB0F04E12AE0A9F900DDC3A4 /* PropediumUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BB774D6C2AFDDF5400030B82 /* Widgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB774D7D2AFDDF5500030B82 /* Build configuration list for PBXNativeTarget "Widgets" */;
+			buildPhases = (
+				BB774D692AFDDF5400030B82 /* Sources */,
+				BB774D6A2AFDDF5400030B82 /* Frameworks */,
+				BB774D6B2AFDDF5400030B82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widgets;
+			productName = PropediumWidgetExtensionExtension;
+			productReference = BB774D6D2AFDDF5400030B82 /* Widgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +400,9 @@
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = BB0F04C62AE0A9F800DDC3A4;
 					};
+					BB774D6C2AFDDF5400030B82 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 				};
 			};
 			buildConfigurationList = BB0F04C22AE0A9F800DDC3A4 /* Build configuration list for PBXProject "Propedium" */;
@@ -222,6 +421,7 @@
 				BB0F04C62AE0A9F800DDC3A4 /* Propedium */,
 				BB0F04D62AE0A9F900DDC3A4 /* PropediumTests */,
 				BB0F04E02AE0A9F900DDC3A4 /* PropediumUITests */,
+				BB774D6C2AFDDF5400030B82 /* Widgets */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFA39252B156B86004206EF /* AppleLicense.txt in Resources */,
 				BB0F04D22AE0A9F900DDC3A4 /* Preview Assets.xcassets in Resources */,
 				BB0F04CF2AE0A9F900DDC3A4 /* Assets.xcassets in Resources */,
 			);
@@ -250,6 +451,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB774D6B2AFDDF5400030B82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB774D782AFDDF5500030B82 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +466,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB71A7392B4F6AAA00FF2F83 /* DiemDetail.swift in Sources */,
+				BBF251F72CB596200000CFFD /* FoldersView.swift in Sources */,
+				BB0F04F52AE0AE6500DDC3A4 /* Diem.swift in Sources */,
+				BB5830B52B4E1B470074EF00 /* DiemsGrid.swift in Sources */,
+				BBF251F52CB5946A0000CFFD /* SettingsView.swift in Sources */,
+				BB5830B82B4E3DF00074EF00 /* TabBarView.swift in Sources */,
+				BB2B5E232B526A55004E2F9B /* DiemSharedView.swift in Sources */,
+				BB4B4F592B54B132002F0A01 /* DiemWidgetEntry.swift in Sources */,
+				BB71A7372B4F65D900FF2F83 /* HomeView.swift in Sources */,
+				BBFA39272B156BCF004206EF /* Preview+ModelContainer.swift in Sources */,
+				BBFA39292B156C08004206EF /* SampleData+Diem.swift in Sources */,
+				BB4B4F5C2B55FE9E002F0A01 /* DiemWidgetIntent.swift in Sources */,
+				BBFA392B2B157385004206EF /* DiemEditor.swift in Sources */,
 				BB0F04CD2AE0A9F800DDC3A4 /* ContentView.swift in Sources */,
 				BB0F04CB2AE0A9F800DDC3A4 /* PropediumApp.swift in Sources */,
+				BB71A73F2B4FB3B000FF2F83 /* HelperFunctions.swift in Sources */,
+				BB4B4F5A2B54B134002F0A01 /* DiemWidgetEntryView.swift in Sources */,
+				BBFA39222B156B0D004206EF /* ModelContainerPreview.swift in Sources */,
+				BB0F04FE2AE0B2AA00DDC3A4 /* DiemGridItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +505,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB774D692AFDDF5400030B82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB774D722AFDDF5400030B82 /* DiemWidgetBundle.swift in Sources */,
+				BBEDFC762B2FA32F0018CE5E /* Diem.swift in Sources */,
+				BBEDFC752B2E8BE20018CE5E /* DiemWidgetProvider.swift in Sources */,
+				BBEDFC6F2B2E85300018CE5E /* DiemWidgetEntryView.swift in Sources */,
+				BBEDFC6C2B2E846F0018CE5E /* DiemWidgetEntry.swift in Sources */,
+				BB71A7402B4FB41A00FF2F83 /* HelperFunctions.swift in Sources */,
+				BBCE6C7F2B50BB9B0046AD6E /* Preview+ModelContainer.swift in Sources */,
+				BB4B4F5B2B55FD11002F0A01 /* DiemWidgetIntent.swift in Sources */,
+				BB774D742AFDDF5400030B82 /* DiemWidget.swift in Sources */,
+				BBCE6C802B50BB9E0046AD6E /* ModelContainerPreview.swift in Sources */,
+				BBCE6C812B50E2EC0046AD6E /* DiemGridItem.swift in Sources */,
+				BB5830B62B4E20210074EF00 /* SampleData+Diem.swift in Sources */,
+				BB2B5E242B526A55004E2F9B /* DiemSharedView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +537,11 @@
 			isa = PBXTargetDependency;
 			target = BB0F04C62AE0A9F800DDC3A4 /* Propedium */;
 			targetProxy = BB0F04E22AE0A9F900DDC3A4 /* PBXContainerItemProxy */;
+		};
+		BB774D7B2AFDDF5500030B82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB774D6C2AFDDF5400030B82 /* Widgets */;
+			targetProxy = BB774D7A2AFDDF5500030B82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,6 +668,7 @@
 		BB0F04EC2AE0A9F900DDC3A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -425,11 +677,13 @@
 				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Propedium;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,19 +700,23 @@
 		BB0F04ED2AE0A9F900DDC3A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Propedium/PropediumRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Propedium/Preview Content\"";
 				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Propedium;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,6 +806,61 @@
 			};
 			name = Release;
 		};
+		BB774D7E2AFDDF5500030B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.I7T5.Propedium.Widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB774D7F2AFDDF5500030B82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetsRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.I7T5.Propedium.Widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +896,15 @@
 			buildConfigurations = (
 				BB0F04F22AE0A9F900DDC3A4 /* Debug */,
 				BB0F04F32AE0A9F900DDC3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB774D7D2AFDDF5500030B82 /* Build configuration list for PBXNativeTarget "Widgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB774D7E2AFDDF5500030B82 /* Debug */,
+				BB774D7F2AFDDF5500030B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

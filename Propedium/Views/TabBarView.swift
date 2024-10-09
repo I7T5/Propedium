@@ -9,10 +9,24 @@ import SwiftUI
 
 struct TabBarView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            FoldersView()
+                .tabItem {
+                    Label("Categories", systemImage: "folder")
+                }
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "app")
+                }
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "person.circle")
+                }
+        }
     }
 }
 
 #Preview {
     TabBarView()
+        .modelContainer(previewContainer)
 }

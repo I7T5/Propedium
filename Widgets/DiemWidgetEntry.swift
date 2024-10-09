@@ -10,5 +10,9 @@ import AppIntents
 
 struct DiemWidgetEntry: TimelineEntry {
     var date: Date
-    let configuration: DiemWidgetIntent
+    var diem: Diem?
+    
+    static var empty: Self {
+        Self(date: .now)
+    }
 }

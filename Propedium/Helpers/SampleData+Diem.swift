@@ -58,6 +58,11 @@ extension Diem {
         name: "Christmas",
         date: createDate(year: 2024, month: 12, day: 25)
     )
+    
+    static let placeholder: Diem = .init(
+        name: "Placeholder",
+        date: createDate(year: 2024, month: 12, day: 25)
+    )
 }
 
 extension Diem {
@@ -65,61 +70,3 @@ extension Diem {
         .newYear, .easter, .aprilFools, .mayFourth, .childrensDay, .independenceDay, .myBirthday, .laborDay, .thanksgiving, .christmas
     ]
 }
-
-//extension Diem {
-//    static func insertSampleData(modelContext: ModelContext) {
-//        // Add the Diems to the model context.
-//        for diem in Diem.sampleDiems {
-//            modelContext.insert(diem)
-//        }
-//    }
-//}
-
-//// MARK: - Helpers
-//// The MIT License (MIT) Copyright (c) 2020-Present Paweł Wiszenko
-//
-//extension Diem {
-//    static func getAll() -> [Diem] {
-//        let key = UserDefaultKey.diems
-//        guard let diems: [Diem] = UserDefaults.appGroup.getArray(forKey: key) else {
-//            let diems: [Diem] = Diem.sampleDiems
-//            UserDefaults.appGroup.setArray(diems, forKey: key)
-//            return diems
-//        }
-//        return diems
-//    }
-//}
-//
-//// MARK: UserDefaults
-//enum Shared {
-//    static let appGroupName = "group.com.I7T5.Propedium"
-////    static let luckyNumberFilename = "LuckyNumber.txt"
-//}
-//
-//extension UserDefaults {
-//    func setArray<Element>(_ array: [Element], forKey key: String) where Element: Encodable {
-//        let data = try? JSONEncoder().encode(array)
-//        set(data, forKey: key)
-//    }
-//
-//    func getArray<Element>(forKey key: String) -> [Element]? where Element: Decodable {
-//        guard let data = data(forKey: key) else {
-//            return nil
-//        }
-//        return try? JSONDecoder().decode([Element].self, from: data)
-//    }
-//}
-//
-//extension UserDefaults {
-//    static let appGroup = UserDefaults(suiteName: Shared.appGroupName)!
-//}
-//
-//
-//enum UserDefaultKey {
-//    static var luckyNumber: String { #function }
-//    static var diems: String { #function }
-//
-//    static func eventCounter(id: Int) -> String {
-//        "eventCounter-\(id)"
-//    }
-//}

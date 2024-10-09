@@ -6,12 +6,24 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct PropediumApp: App {
+    // https://stackoverflow.com/q/77736292/19374566
+    let container: ModelContainer
+    init() {
+      do {
+        container = try ModelContainer(for: Diem.self)
+      } catch {
+        fatalError("Could not initialize ModelContainer")
+      }
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: Diem.self)
         }
     }
 }

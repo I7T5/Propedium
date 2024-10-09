@@ -6,8 +6,30 @@
 	<dict>
 		<key>Propedium.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Widgets.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BB0F04C62AE0A9F800DDC3A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB774D6C2AFDDF5400030B82</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

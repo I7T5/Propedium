@@ -21,11 +21,15 @@ struct DiemWidget: Widget {
         AppIntentConfiguration(
             kind: kind,
             intent: DiemWidgetIntent.self,
-            provider: Provider()
+            provider: DiemWidgetProvider()
         ) { entry in
             DiemWidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
+                .modelContainer(for: Diem.self)
         }
+        .configurationDisplayName("Diem Widget")
+        .description("Keep track of your diems.")
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge,.systemExtraLarge])
     }
 }
 
@@ -39,6 +43,6 @@ struct DiemWidget: Widget {
 #Preview(as: .systemSmall) {
     DiemWidget()
 } timeline: {
-    DiemWidgetEntry(date: .now, configuration: .christmas)
-    DiemWidgetEntry(date: .now, configuration: .independenceDay)
+    DiemWidgetEntry(date: .now, diem: .christmas)
+    DiemWidgetEntry(date: .now, diem: .independenceDay)
 }
