@@ -70,27 +70,25 @@ struct DiemEntity: AppEntity, Identifiable, Hashable {
     var name: String
     var date: Date
     var detail: String?
-    var id: String
+//    var id: String
     
-//    var id: String {
-//        name
-//    }
+    var id: String {
+        name
+    }
     
     func daysDiff() -> Int {
         return Calendar.current.dateComponents([.day], from: Date(), to: date).day!
     }
 
-    init(name: String, date: Date) {
-        self.name = name
-        self.date = date
-        self.id = UUID().uuidString
-    }
+//    init(name: String, date: Date) {
+//        self.name = name
+//        self.date = date
+//    }
 
     init(from diem: Diem) {
         name = diem.name
         date = diem.date
-        detail = diem.detail
-        id = diem.id
+//        id = diem.id
     }
 
     var displayRepresentation: DisplayRepresentation {
