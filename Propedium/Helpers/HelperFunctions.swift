@@ -22,13 +22,13 @@ func toString(date: Date) -> String {
 func createDate(year: Int? = nil, month: Int, day: Int) -> Date {
     
     let calendar = Calendar.current
-    let computedYear = calendar.component(.year, from: Date())
-//    // If day is past in year, set day to next year
-//    if month <= calendar.component(.month, from: Date()) {
-//        if day < calendar.component(.day, from: Date()) {
-//            computedYear += 1
-//        }
-//    }
+    var computedYear = calendar.component(.year, from: Date())
+    // If day is past in year, set day to next year
+    if month <= calendar.component(.month, from: Date()) {
+        if day < calendar.component(.day, from: Date()) {
+            computedYear += 1
+        }
+    }
     let year = year ?? computedYear
     
     // TODO: error handling

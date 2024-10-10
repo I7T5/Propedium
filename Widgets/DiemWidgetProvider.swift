@@ -49,49 +49,36 @@ struct DiemWidgetProvider: AppIntentTimelineProvider {
     
     func placeholder(in context: Context) -> DiemWidgetEntry {
 //        let diem = try! modelContext.fetch(FetchDescriptor<Diem>(sortBy: [.init(\.date)])).first!
-        return DiemWidgetEntry(date: Date(), diem: .christmas)
+        return DiemWidgetEntry(date: .now, diem: .placeholder)
     }
 
     func snapshot(for configuration: DiemWidgetIntent, in context: Context) async -> DiemWidgetEntry {
         let diems = try! modelContext.fetch(FetchDescriptor<Diem>(sortBy: [.init(\.date)]))
         logger.info("Found \(diems.count) diems")
         guard let diem = diems.first else {
-            return .empty
+            return DiemWidgetEntry(date: .now, diem: .placeholder)
         }
         
         return DiemWidgetEntry(date: .now, diem: diem)
     }
     
     func timeline(for configuration: DiemWidgetIntent, in context: Context) async -> Timeline<DiemWidgetEntry> {
-//        var entries: [DiemWidgetEntry] = []
-//        
+        // TODO: update widget once per day
 
-//        logger.info("Found \(diems.count) diems")
-//        guard let diem = diems.first else {
-//            return Timeline(
-//                entries: [.empty],
-//                policy: .never
-//            )
-//        }
-//        
-//        // TODO: update widget once per day
-//        let entry = DiemWidgetEntry(date: .now, diem: diem)
-//        entries.append(entry)
-//        
-//        return Timeline(entries: entries, policy: .atEnd)
-        
         // Use the selected intent parameter to generate the timeline entry
         if let diemEntity = configuration.diem {
-            let diem = Diem(name: diemEntity.name, date: diemEntity.date)
+            logger.info("Found configuration diem: \(diemEntity.name)")
+            let diem = Diem(entity: diemEntity)
             let entry = DiemWidgetEntry(date: .now, diem: diem)
             let timeline = Timeline(entries: [entry], policy: .atEnd)
             return timeline
         } else {
             // If no diem is selected, provide a placeholder or default entry
             let diems = try! modelContext.fetch(FetchDescriptor<Diem>(sortBy: [.init(\.date)]))
+            logger.info("Found \(diems.count) diems")
             guard let diem = diems.first else {
                 return Timeline(
-                    entries: [.empty],
+                    entries: [DiemWidgetEntry(date: .now, diem: .placeholder)],
                     policy: .never
                 )
             }

@@ -19,6 +19,7 @@ struct DiemWidgetEntryView : View {
         } else {
             DiemSharedView(diem: .placeholder)
         }
+//        DiemSharedView(diem: entry.diem)
         
         
     }

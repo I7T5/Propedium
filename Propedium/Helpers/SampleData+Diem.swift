@@ -54,14 +54,14 @@ extension Diem {
         date: createDate(year: 2024, month: 11, day: 24)
     )
     
-    static let christmas: Diem = .init(
-        name: "Christmas",
-        date: createDate(year: 2024, month: 12, day: 25)
-    )
+//    static let christmas: Diem = .init(
+//        name: "Christmas",
+//        date: createDate(year: 2024, month: 12, day: 25)
+//    )
     
     static let placeholder: Diem = .init(
         name: "Placeholder",
-        date: createDate(year: 2024, month: 12, day: 25)
+        date: createDate(year: 1970, month: 1, day: 1)
     )
 }
 

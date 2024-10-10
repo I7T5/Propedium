@@ -13,11 +13,13 @@ struct PropediumApp: App {
     // https://stackoverflow.com/q/77736292/19374566
     let container: ModelContainer
     init() {
-      do {
-        container = try ModelContainer(for: Diem.self)
-      } catch {
-        fatalError("Could not initialize ModelContainer")
-      }
+        do {
+            container = try ModelContainer(for: Diem.self)
+        } catch {
+            fatalError("Could not initialize ModelContainer")
+        }
+//        let modelContext = ModelContext(container)
+//        modelContext.insert(Diem.christmas)
     }
     
     var body: some Scene {

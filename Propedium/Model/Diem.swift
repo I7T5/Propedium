@@ -75,3 +75,10 @@ import SwiftData
 //        id = try container.decode(String.self, forKey: .id)
     }
 }
+
+extension Diem {
+    static let christmas: Diem = .init(
+        name: "Christmas",
+        date: createDate(month: 12, day: 25)
+    )
+}
