@@ -30,7 +30,7 @@ struct DiemWidgetEntryView : View {
 //        DiemWidgetEntryView(entry: DiemWidgetEntry(date: Date(), configuration: .christmas))
 //    }
     
-    DiemWidgetEntryView(entry: DiemWidgetEntry(date: Date(), diem: .christmas))
+    DiemWidgetEntryView(entry: DiemWidgetEntry(date: .now, diem: .christmas))
         .previewContext(WidgetPreviewContext(family: .systemSmall))
         .modelContainer(previewContainer)
 }

@@ -12,9 +12,9 @@ import SwiftData
 @Model class Diem: Codable, Hashable, Identifiable {
     @Attribute(.unique) var name: String
 //    var id: String
-    var id: String {
-        name
-    }
+//    var id: String {
+//        name
+//    }
     var date: Date  // TODO: time, option to display hours, minutes, seconds (if time not specified, by default 00:00)
     var detail: String?
     // TODO: repeating events

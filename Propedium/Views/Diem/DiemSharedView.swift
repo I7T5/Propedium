@@ -10,6 +10,7 @@ import SwiftUI
 struct DiemSharedView: View {
     var diem: Diem
     
+    // Displaying dynamic dates in widgets https://developer.apple.com/documentation/widgetkit/displaying-dynamic-dates
     var body: some View {
         Text("\(abs(diem.daysDiff()))")
     }

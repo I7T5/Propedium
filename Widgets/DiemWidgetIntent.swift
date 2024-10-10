@@ -131,7 +131,7 @@ struct DiemEntityQuery: EntityQuery, Sendable {
         logger.info("Loading diems for identifiers: \(identifiers)")
         let container = try ModelContainer(for: Diem.self)
         let modelContext = ModelContext(container)
-        let diems = try modelContext.fetch(FetchDescriptor<Diem>(predicate: #Predicate { identifiers.contains($0.id) }))
+        let diems = try modelContext.fetch(FetchDescriptor<Diem>(predicate: #Predicate { identifiers.contains($0.name) }))
 //        let diems = try modelContext.fetch(FetchDescriptor<Diem>())
         logger.info("Found \(diems.count) diems")
         return diems.map { DiemEntity(from: $0) }
