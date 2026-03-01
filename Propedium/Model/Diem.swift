@@ -81,4 +81,13 @@ extension Diem {
         name: "Christmas",
         date: createDate(month: 12, day: 25)
     )
+
+    /// Shared ModelContainer that uses the App Group so the main app
+    /// and the widget extension read/write the same database.
+    static let sharedModelContainer: ModelContainer = {
+        let config = ModelConfiguration(
+            groupContainer: .identifier("group.com.I7T5.Propedium")
+        )
+        return try! ModelContainer(for: Diem.self, configurations: config)
+    }()
 }

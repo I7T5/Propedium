@@ -10,14 +10,10 @@ import AppIntents
 
 struct DiemWidgetEntry: TimelineEntry {
     var date: Date
-    var diem: Diem?
-    
-//    static var empty: Self {
-//        Self(date: .now, diem: .placeholder)
-//    }
-    
-    init(date: Date, diem: Diem?) {
-        self.date = date
-        self.diem = diem
+    var diemName: String
+    var diemDate: Date
+
+    var daysDiff: Int {
+        Calendar.current.dateComponents([.day], from: Date(), to: diemDate).day ?? 0
     }
 }

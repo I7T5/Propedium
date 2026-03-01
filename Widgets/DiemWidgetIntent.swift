@@ -19,7 +19,7 @@ private let logger = Logger(subsystem: "Widgets", category: "DiemWidgetIntent")
 
 struct DiemWidgetIntent: WidgetConfigurationIntent {
     static var title: LocalizedStringResource = "Select diem"
-//    static var description = IntentDescription("Keeps track of a diem.")
+    static var description = IntentDescription("Keeps track of a diem.")
 
     // TODO: assign default diem
     @Parameter(title: "Diem")
@@ -37,20 +37,6 @@ struct DiemWidgetIntent: WidgetConfigurationIntent {
         }
     }
 }
-
-//extension DiemWidgetIntent {
-//    static var smiley: DiemWidgetIntent {
-//        let intent = DiemWidgetIntent()
-//        intent.diem = "😀"
-//        return intent
-//    }
-//    
-//    static var starEyes: DiemWidgetIntent {
-//        let intent = DiemWidgetIntent()
-//        intent.diem = "🤩"
-//        return intent
-//    }
-//}
 
 extension DiemWidgetIntent {
     static var christmas: DiemWidgetIntent {
@@ -88,7 +74,6 @@ struct DiemEntity: AppEntity, Identifiable, Hashable {
     init(from diem: Diem) {
         name = diem.name
         date = diem.date
-//        id = diem.id
     }
 
     var displayRepresentation: DisplayRepresentation {
@@ -100,49 +85,21 @@ struct DiemEntity: AppEntity, Identifiable, Hashable {
 }
 
 // https://developer.apple.com/documentation/swiftui/backyard-birds-sample
-//struct DiemEntityQuery: EntityQuery, Sendable {
-//    func entities(for identifiers: [DiemEntity.ID]) async throws -> [DiemEntity] {
-//        logger.info("Loading diems for identifiers: \(identifiers)")
-//        // Replaced `DataGeneration.container` with `try! ModelContainer(for: Diem.self)`
-//        let modelContext = ModelContext(try! ModelContainer(for: Schema([Diem.self])))
-//        // TODO: handle when modelContext is empty or when id doesn't exist on second time changing diem
-////        let diems = try modelContext.fetch(FetchDescriptor<Diem>(predicate: #Predicate { identifiers.contains($0.id) }))
-//        let diems = try modelContext.fetch(FetchDescriptor<Diem>())  // try this
-//        logger.info("Found \(diems.count) diems")
-//        return diems.map { DiemEntity(from: $0) }
-//    }
-//    
-//    func suggestedEntities() async throws -> [DiemEntity] {
-//        logger.info("Loading diems to suggest for specific diem...")
-//        let modelContext = ModelContext(try! ModelContainer(for: Schema([Diem.self])))
-//        let diems = try modelContext.fetch(FetchDescriptor<Diem>())
-//        logger.info("Found \(diems.count) diems")
-//        return diems.map { DiemEntity(from: $0) }
-//    }
-//}
-
-// By ChatGPT
-// Key Changes:
-//
-// 1. ModelContainer Initialization: The ModelContainer is now initialized with Diem.self directly. This ensures that the schema for Diem is properly registered in the container.
-// 2. Use ModelContext Safely: The ModelContext is created using the container, ensuring that the context is correctly linked to the schema.
 struct DiemEntityQuery: EntityQuery, Sendable {
     func entities(for identifiers: [DiemEntity.ID]) async throws -> [DiemEntity] {
         logger.info("Loading diems for identifiers: \(identifiers)")
-        let container = try ModelContainer(for: Diem.self)
-        let modelContext = ModelContext(container)
+        let modelContext = ModelContext(Diem.sharedModelContainer)
         let diems = try modelContext.fetch(FetchDescriptor<Diem>(predicate: #Predicate { identifiers.contains($0.name) }))
-//        let diems = try modelContext.fetch(FetchDescriptor<Diem>())
         logger.info("Found \(diems.count) diems")
         return diems.map { DiemEntity(from: $0) }
     }
-    
+
     func suggestedEntities() async throws -> [DiemEntity] {
         logger.info("Loading diems to suggest for specific diem...")
-        let container = try ModelContainer(for: Diem.self)
-        let modelContext = ModelContext(container)
+        let modelContext = ModelContext(Diem.sharedModelContainer)
         let diems = try modelContext.fetch(FetchDescriptor<Diem>())
         logger.info("Found \(diems.count) diems")
         return diems.map { DiemEntity(from: $0) }
     }
 }
+

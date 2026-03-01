@@ -45,44 +45,47 @@ See the LICENSE.txt file for this sample’s licensing information.
 private let logger = Logger(subsystem: "Widgets", category: "DiemTimelineProvider")
 
 struct DiemWidgetProvider: AppIntentTimelineProvider {
-    let modelContext = ModelContext(try! ModelContainer(for: Diem.self))  // same issue as Intent
+    let modelContext = ModelContext(Diem.sharedModelContainer)
     
     func placeholder(in context: Context) -> DiemWidgetEntry {
-//        let diem = try! modelContext.fetch(FetchDescriptor<Diem>(sortBy: [.init(\.date)])).first!
-        return DiemWidgetEntry(date: .now, diem: .placeholder)
+        logger.info("Calling placeholder() in DiemWidgetProvider...")
+        return DiemWidgetEntry(date: .now, diemName: "Placeholder", diemDate: .now)
     }
 
     func snapshot(for configuration: DiemWidgetIntent, in context: Context) async -> DiemWidgetEntry {
         let diems = try! modelContext.fetch(FetchDescriptor<Diem>(sortBy: [.init(\.date)]))
-        logger.info("Found \(diems.count) diems")
+        logger.info("snapshot: Found \(diems.count) diems")
         guard let diem = diems.first else {
-            return DiemWidgetEntry(date: .now, diem: .placeholder)
+            return DiemWidgetEntry(date: .now, diemName: "Placeholder", diemDate: .now)
         }
-        
-        return DiemWidgetEntry(date: .now, diem: diem)
+        // Extract plain values while the ModelContext is alive
+        return DiemWidgetEntry(date: .now, diemName: diem.name, diemDate: diem.date)
     }
-    
+
     func timeline(for configuration: DiemWidgetIntent, in context: Context) async -> Timeline<DiemWidgetEntry> {
         // TODO: update widget once per day
 
-        // Use the selected intent parameter to generate the timeline entry
+        // If a diem was selected, use the entity's data directly — no need to fetch
+        // DiemEntity already carries the name and date as plain values
         if let diemEntity = configuration.diem {
             logger.info("Found configuration diem: \(diemEntity.name)")
-            let diem = Diem(entity: diemEntity)
-            let entry = DiemWidgetEntry(date: .now, diem: diem)
-            let timeline = Timeline(entries: [entry], policy: .atEnd)
-            return timeline
-        } else {
-            // If no diem is selected, provide a placeholder or default entry
-            let diems = try! modelContext.fetch(FetchDescriptor<Diem>(sortBy: [.init(\.date)]))
-            logger.info("Found \(diems.count) diems")
-            guard let diem = diems.first else {
-                return Timeline(
-                    entries: [DiemWidgetEntry(date: .now, diem: .placeholder)],
-                    policy: .never
-                )
-            }
-            return Timeline(entries: [DiemWidgetEntry(date: .now, diem: diem)], policy: .atEnd)
+            let entry = DiemWidgetEntry(date: .now, diemName: diemEntity.name, diemDate: diemEntity.date)
+            return Timeline(entries: [entry], policy: .atEnd)
         }
+
+        // No diem selected — fall back to the first diem in the database
+        logger.info("No diem selected. Providing default diem to widget...")
+        let diems = try! modelContext.fetch(FetchDescriptor<Diem>(sortBy: [.init(\.date)]))
+        logger.info("Found \(diems.count) diems")
+        guard let diem = diems.first else {
+            logger.info("Using placeholder diem")
+            return Timeline(
+                entries: [DiemWidgetEntry(date: .now, diemName: "Placeholder", diemDate: .now)],
+                policy: .never
+            )
+        }
+        // Extract plain values while the ModelContext is alive
+        logger.info("Using first diem as default...")
+        return Timeline(entries: [DiemWidgetEntry(date: .now, diemName: diem.name, diemDate: diem.date)], policy: .atEnd)
     }
 }

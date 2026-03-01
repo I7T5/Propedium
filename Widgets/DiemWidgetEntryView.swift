@@ -7,30 +7,16 @@
 
 import SwiftUI
 import WidgetKit
-import SwiftData
 
 struct DiemWidgetEntryView : View {
     var entry: DiemWidgetEntry
 
     var body: some View {
-//        Text("\(abs(Diem(from: entry.configuration.diem).daysDiff()))")
-        if let diem: Diem = entry.diem {
-            DiemSharedView(diem: diem)
-        } else {
-            DiemSharedView(diem: .placeholder)
-        }
-//        DiemSharedView(diem: entry.diem)
-        
-        
+        Text("\(abs(entry.daysDiff))")
     }
 }
 
 #Preview {
-//    ModelContainerPreview(ModelContainer.sample) {
-//        DiemWidgetEntryView(entry: DiemWidgetEntry(date: Date(), configuration: .christmas))
-//    }
-    
-    DiemWidgetEntryView(entry: DiemWidgetEntry(date: .now, diem: .christmas))
+    DiemWidgetEntryView(entry: DiemWidgetEntry(date: .now, diemName: "Christmas", diemDate: createDate(month: 12, day: 25)))
         .previewContext(WidgetPreviewContext(family: .systemSmall))
-        .modelContainer(previewContainer)
 }

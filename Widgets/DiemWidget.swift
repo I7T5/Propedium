@@ -25,7 +25,6 @@ struct DiemWidget: Widget {
         ) { entry in
             DiemWidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
-                .modelContainer(for: Diem.self)
         }
         .configurationDisplayName("Diem Widget")
         .description("Keep track of your diems.")
@@ -43,6 +42,6 @@ struct DiemWidget: Widget {
 #Preview(as: .systemSmall) {
     DiemWidget()
 } timeline: {
-    DiemWidgetEntry(date: .now, diem: .christmas)
-    DiemWidgetEntry(date: .now, diem: .independenceDay)
+    DiemWidgetEntry(date: .now, diemName: "Christmas", diemDate: createDate(month: 12, day: 25))
+    DiemWidgetEntry(date: .now, diemName: "Independence Day", diemDate: createDate(month: 7, day: 4))
 }

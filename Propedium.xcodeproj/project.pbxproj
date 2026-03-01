@@ -18,10 +18,7 @@
 		BB0F04FE2AE0B2AA00DDC3A4 /* DiemGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04FD2AE0B2AA00DDC3A4 /* DiemGridItem.swift */; };
 		BB2B5E232B526A55004E2F9B /* DiemSharedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2B5E222B526A55004E2F9B /* DiemSharedView.swift */; };
 		BB2B5E242B526A55004E2F9B /* DiemSharedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2B5E222B526A55004E2F9B /* DiemSharedView.swift */; };
-		BB4B4F592B54B132002F0A01 /* DiemWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFC6A2B2E827A0018CE5E /* DiemWidgetEntry.swift */; };
-		BB4B4F5A2B54B134002F0A01 /* DiemWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFC6D2B2E852E0018CE5E /* DiemWidgetEntryView.swift */; };
 		BB4B4F5B2B55FD11002F0A01 /* DiemWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB774D752AFDDF5400030B82 /* DiemWidgetIntent.swift */; };
-		BB4B4F5C2B55FE9E002F0A01 /* DiemWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB774D752AFDDF5400030B82 /* DiemWidgetIntent.swift */; };
 		BB5830B52B4E1B470074EF00 /* DiemsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5830B42B4E1B470074EF00 /* DiemsGrid.swift */; };
 		BB5830B62B4E20210074EF00 /* SampleData+Diem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA39282B156C08004206EF /* SampleData+Diem.swift */; };
 		BB5830B82B4E3DF00074EF00 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5830B72B4E3DF00074EF00 /* TabBarView.swift */; };
@@ -35,9 +32,9 @@
 		BB774D742AFDDF5400030B82 /* DiemWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB774D732AFDDF5400030B82 /* DiemWidget.swift */; };
 		BB774D782AFDDF5500030B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB774D772AFDDF5500030B82 /* Assets.xcassets */; };
 		BB774D7C2AFDDF5500030B82 /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BB774D6D2AFDDF5400030B82 /* Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BB7B9BA82CBFF9FF00CED60F /* DiemWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB774D752AFDDF5400030B82 /* DiemWidgetIntent.swift */; };
 		BBCE6C7F2B50BB9B0046AD6E /* Preview+ModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA39262B156BCF004206EF /* Preview+ModelContainer.swift */; };
 		BBCE6C802B50BB9E0046AD6E /* ModelContainerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA39212B156B0D004206EF /* ModelContainerPreview.swift */; };
-		BBCE6C812B50E2EC0046AD6E /* DiemGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F04FD2AE0B2AA00DDC3A4 /* DiemGridItem.swift */; };
 		BBEDFC6C2B2E846F0018CE5E /* DiemWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFC6A2B2E827A0018CE5E /* DiemWidgetEntry.swift */; };
 		BBEDFC6F2B2E85300018CE5E /* DiemWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFC6D2B2E852E0018CE5E /* DiemWidgetEntryView.swift */; };
 		BBEDFC752B2E8BE20018CE5E /* DiemWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDFC732B2E8BE20018CE5E /* DiemWidgetProvider.swift */; };
@@ -473,16 +470,14 @@
 				BBF251F52CB5946A0000CFFD /* SettingsView.swift in Sources */,
 				BB5830B82B4E3DF00074EF00 /* TabBarView.swift in Sources */,
 				BB2B5E232B526A55004E2F9B /* DiemSharedView.swift in Sources */,
-				BB4B4F592B54B132002F0A01 /* DiemWidgetEntry.swift in Sources */,
 				BB71A7372B4F65D900FF2F83 /* HomeView.swift in Sources */,
 				BBFA39272B156BCF004206EF /* Preview+ModelContainer.swift in Sources */,
+				BB7B9BA82CBFF9FF00CED60F /* DiemWidgetIntent.swift in Sources */,
 				BBFA39292B156C08004206EF /* SampleData+Diem.swift in Sources */,
-				BB4B4F5C2B55FE9E002F0A01 /* DiemWidgetIntent.swift in Sources */,
 				BBFA392B2B157385004206EF /* DiemEditor.swift in Sources */,
 				BB0F04CD2AE0A9F800DDC3A4 /* ContentView.swift in Sources */,
 				BB0F04CB2AE0A9F800DDC3A4 /* PropediumApp.swift in Sources */,
 				BB71A73F2B4FB3B000FF2F83 /* HelperFunctions.swift in Sources */,
-				BB4B4F5A2B54B134002F0A01 /* DiemWidgetEntryView.swift in Sources */,
 				BBFA39222B156B0D004206EF /* ModelContainerPreview.swift in Sources */,
 				BB0F04FE2AE0B2AA00DDC3A4 /* DiemGridItem.swift in Sources */,
 			);
@@ -519,7 +514,6 @@
 				BB4B4F5B2B55FD11002F0A01 /* DiemWidgetIntent.swift in Sources */,
 				BB774D742AFDDF5400030B82 /* DiemWidget.swift in Sources */,
 				BBCE6C802B50BB9E0046AD6E /* ModelContainerPreview.swift in Sources */,
-				BBCE6C812B50E2EC0046AD6E /* DiemGridItem.swift in Sources */,
 				BB5830B62B4E20210074EF00 /* SampleData+Diem.swift in Sources */,
 				BB2B5E242B526A55004E2F9B /* DiemSharedView.swift in Sources */,
 			);
@@ -670,6 +664,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Propedium/Propedium.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Propedium/Preview Content\"";
@@ -805,6 +800,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9ATGQ8Z7R3;
